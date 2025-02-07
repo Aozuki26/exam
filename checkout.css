@@ -1,0 +1,130 @@
+/* checkout.css */
+
+  .checkout-container {
+    background-image: url(./Images/bg.jpg);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px; /* Adds space between the top and content */
+  }
+  
+  .checkout-container h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #e9db17;
+  }
+  .glowing-text{
+    font-size: 50px;
+    font-weight: bold;
+    color: #FFD700; /* Gold color */
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    animation: glowing 1.5s infinite alternate;
+    text-shadow: 3px 3px 5px rgba(255, 215, 0, 0.7), 
+                 0 0 25px rgba(255, 215, 0, 0.7), 
+                 0 0 50px rgba(255, 215, 0, 0.5);
+  }
+  
+  @keyframes glowing {
+    0% {
+      text-shadow: 0 0 5px #b49a03, 0 0 10px #FFD700, 0 0 15px #FFCC00, 0 0 20px #FFCC00, 0 0 25px #FFCC00, 0 0 30px #FFCC00, 0 0 35px #FFCC00;
+    }
+    100% {
+      text-shadow: 0 0 10px #493f07, 0 0 20px #3f3706, 0 0 30px #FFCC00, 0 0 40px #FFCC00, 0 0 50px #FFCC00, 0 0 60px #FFCC00, 0 0 70px #FFCC00;
+    }
+  }
+  .cart-summary {
+    margin-bottom: 2rem;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .cart-summary h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  #cart-items {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #cart-items li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
+  
+  #total-price {
+    text-align: right;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+    width: 100%;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+  }
+  
+  .form-group textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  .form-group input[type="submit"] {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .form-group input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 600px) {
+    .checkout-container {
+      padding: 1.5rem;
+    }
+  
+    .checkout-container h1 {
+      font-size: 1.5rem;
+    }
+  
+    .form-group input[type="submit"] {
+      font-size: 0.9rem;
+    }
+  }
+  
